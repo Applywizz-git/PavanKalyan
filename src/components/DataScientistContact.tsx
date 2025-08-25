@@ -286,13 +286,13 @@ const DataScientistContact = () => {
       label: 'Location',
       value: 'Daytona Beach, FL',
       href: '#'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/PavanKalyan',
-      href: 'https://linkedin.com/in/PavanKalyan'
-    },
+    }
+    // {
+    //   icon: Linkedin,
+    //   label: 'LinkedIn',
+    //   value: 'linkedin.com/in/PavanKalyan',
+    //   href: 'https://linkedin.com/in/PavanKalyan'
+    // },
     // {
     //   icon: Github,
     //   label: 'GitHub',
