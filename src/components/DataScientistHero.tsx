@@ -173,7 +173,7 @@ const DataScientistHero = () => {
             transition={{ type: "spring", stiffness: 200 }}
           >
             <img 
-              src="/src/assets/profile.png" 
+              src="/profile.png" 
               alt="Data Scientist Profile"
               className="w-full h-full object-cover"
             />
