@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Data Scientist Portfolio Color Palette */
+    --background: 0 0% 98%; /* Light background */
+    --foreground: 220 13% 18%; /* Dark text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --primary: 280 87% 47%; /* #9615DB - Primary purple */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 202 3% 50%; /* #7D7F80 - Accent gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 40% 92%;
+    --muted-foreground: 220 13% 45%;
+
+    --accent: 280 87% 47%; /* Same as primary for consistency */
+    --accent-foreground: 0 0% 98%;
+
+    --surface-1: 210 8% 19%; /* #2D3032 - Dark surface */
+    --surface-2: 210 5% 34%; /* #555759 - Lighter surface */
+    --subtle: 210 4% 83%; /* #D2D3D3 - Subtle stroke */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 25 50% 97%;
+
+    --border: 271 20% 85%;
+    --input: 25 30% 92%;
+    --ring: 18 100% 62%;
+
+    --radius: 0.75rem;
+
+    /* Data Scientist Design Tokens */
+    --gradient-bg: linear-gradient(135deg, hsl(var(--background)), hsl(var(--surface-1)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card) / 0.1), hsl(var(--card) / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(280 87% 57%));
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--primary) / 0.3), transparent 70%);
+    --shadow-glass: 0 8px 32px 0 hsl(var(--primary) / 0.15);
+    --shadow-hover: 0 20px 40px -12px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.4);
+    --shadow-card: 0 4px 16px hsl(var(--foreground) / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --backdrop-blur: blur(16px);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 8% 19%; /* #2D3032 - Dark background */
+    --foreground: 210 4% 83%; /* Light text */
+
+    --card: 210 5% 34%; /* #555759 - Dark cards */
+    --card-foreground: 210 4% 83%;
+
+    --popover: 210 5% 34%;
+    --popover-foreground: 210 4% 83%;
+
+    --primary: 280 87% 47%; /* #9615DB - Primary purple */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 202 3% 50%; /* #7D7F80 - Accent gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 5% 25%;
+    --muted-foreground: 210 4% 70%;
+
+    --accent: 280 87% 47%; /* Same as primary */
+    --accent-foreground: 0 0% 98%;
+
+    --surface-1: 210 8% 19%; /* #2D3032 - Dark surface */
+    --surface-2: 210 5% 34%; /* #555759 - Lighter surface */
+    --subtle: 210 4% 83%; /* #D2D3D3 - Subtle stroke */
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 25 50% 97%;
+
+    --border: 271 30% 25%;
+    --input: 271 40% 18%;
+    --ring: 18 100% 62%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
