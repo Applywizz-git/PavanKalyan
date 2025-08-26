@@ -60,7 +60,7 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
             onClick={() => scrollToSection('hero')}
           >
 <img
-    src="/src/assets/PK_logo.png" // path to your image
+    src="src/assets/PK_logo.png" // path to your image
     alt="Pavan Kalyan Logo"
     className="h-10 w-auto" // adjust height/width as needed
   />
