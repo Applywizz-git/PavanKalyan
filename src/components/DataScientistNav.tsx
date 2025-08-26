@@ -63,7 +63,7 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
   onClick={() => scrollToSection('hero')}
 >
   <img
-    src="src/assets/PK_logo.png"
+    src="PK_logo.png"
     alt="PK"
     className="h-10 w-auto"
   />
