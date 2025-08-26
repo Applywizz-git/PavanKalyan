@@ -64,7 +64,7 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
 >
   <img
     src="src/assets/PK_logo.png"
-    alt="Pavan Kalyan Logo"
+    alt="PK"
     className="h-10 w-auto"
   />
 </motion.div>
