@@ -69,6 +69,7 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
   />
 </motion.div>
 
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {sections.map((section) => (
