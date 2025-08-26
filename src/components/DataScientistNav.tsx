@@ -55,16 +55,19 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold text-primary cursor-pointer"
-            onClick={() => scrollToSection('hero')}
-          >
-<img
-    src="src/assets/PK_logo.png" // path to your image
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0 0 20px rgba(168, 85, 247, 0.8)" // purple glow
+  }}
+  className="text-2xl font-bold text-primary cursor-pointer rounded-sm"
+  onClick={() => scrollToSection('hero')}
+>
+  <img
+    src="src/assets/PK_logo.png"
     alt="Pavan Kalyan Logo"
-    className="h-10 w-auto" // adjust height/width as needed
+    className="h-10 w-auto"
   />
-          </motion.div>
+</motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
