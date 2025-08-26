@@ -59,7 +59,11 @@ const DataScientistNav = ({ activeSection, setActiveSection }: NavigationProps) 
             className="text-2xl font-bold text-primary cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            pavan kalyan
+<img
+    src="/src/assets/PK_logo.png" // path to your image
+    alt="Pavan Kalyan Logo"
+    className="h-10 w-auto" // adjust height/width as needed
+  />
           </motion.div>
 
           {/* Desktop Navigation */}
